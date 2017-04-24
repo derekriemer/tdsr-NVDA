@@ -135,11 +135,6 @@ class TDSRConsoleNuker(NVDAObject):
 		if self.TDSROn and "script_caret_" in identifyer:
 			return self.script_caret_on.__get__(self, self.__class__)
 		return super(TDSRConsoleNuker, self).getScript(gesture)
-	def _caretMovementScriptHelper(self, gesture, unit):
-		if self.TDSROn:
-			gesture.send()
-			return
-		super(TDSRConsoleNuker, self)._caretMovementScriptHelper(gesture, unit)
 
 	def script_toggleTDSR(self, gesture):
 		if self.TDSROn:
