@@ -5,7 +5,7 @@ This addon aims to provide a convenient method for using TDSR with NVDA.
 
 ## Rationale:
 
-When usiing ssh with NVDA, cursor tracking is immediately problematic.
+When using ssh with NVDA, cursor tracking is immediately problematic.
 NVDA tracks the cursor in a syncronous fassion.
 while this has benefits in that it doesn't chance double speaking or other strange behavior, it becomes problematic in terminals because NVDA waits a certain amount of time before giving up on the hope of a cursor move, and simply reporting the same character again.
 Assuming the user presses right arrow while focused on "p" in vim,   NVDA waits .03 seconds, and then  gives up on a cursor move; it then  says "p" again instead of "e".
