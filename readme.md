@@ -102,7 +102,7 @@ Note: There are still bugs here, if you know how to fix them, tell me, otherwise
 ## Caviots
 
 * If you are doing something with a boat load of text in the bakground like a linux kernel compile, and switch to another window, TDSR will still communicate with NVDA, because focus doesn't matter. You need to turn on quiet mode in TDSR to fix this. This is *bye design*
-* Copy in tsr doesn't work, It only works in tdsr on mac.
+* Copy in TDSR doesn't work, It only works in tdsr on mac.
 
 [1]: https://github.com/tspivey/tdsr
 [2]: https://github.com/tspivey/
