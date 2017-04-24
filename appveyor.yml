@@ -4,7 +4,8 @@ environment:
 install:
   - py -m pip install markdown
   - py -m pip install --egg scons
-  
+  - curl https://files.derekriemer.com/nvda_appveyor_artifacts.zip > a.zip
+  - 7z e a.zip
 
 build_script:
   - scons
