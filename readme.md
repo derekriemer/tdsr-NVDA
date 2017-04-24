@@ -1,5 +1,6 @@
 # TDSR NVDA Server
 
+[Download latest addon based on master branch at any time](https://ci.appveyor.com/project/derekriemer/tdsr-nvda/build/artifacts)  
 This addon aims to provide a convenient method for using TDSR with NVDA.
 [TDSR][1] is a console screen reader written by [Tyler Spivey][2]. It provides efficient access to consoles, especially over ssh, where traditionally, screen readers struggle due to a multitude of factors. 
 
