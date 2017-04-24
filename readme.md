@@ -96,7 +96,7 @@ If you want, create an alias like
 
 ## Disabling NVDA's console support.
 
-Pressing nvda+f5 will kill console support. Review cursor still works, but bye bye editoing commands and dynamic content changes.
+Pressing nvda+f5 will kill console support. Review cursor still works, but bye bye editing commands and dynamic content changes.
 Note: There are still bugs here, if you know how to fix them, tell me, otherwise, I'll investigate them sometime.
 
 ## Caviots
