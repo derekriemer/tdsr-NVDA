@@ -127,7 +127,7 @@ class TDSRConsoleNuker(NVDAObject):
 
 	def getScript(self, gesture):
 		identifyer = ""
-		for i in list(gesture.normalizedIdentifiers):
+		for i in gesture.normalizedIdentifiers:
 			if i in self._gestureMap:
 				identifyer = i
 				break
