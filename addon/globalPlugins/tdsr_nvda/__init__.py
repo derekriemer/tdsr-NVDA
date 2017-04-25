@@ -74,7 +74,6 @@ class Client(object):
 		except:
 			self.close()
 			return
-		data = str(data);print data
 		if data == '': #Disconnect
 			self.close()
 			return
