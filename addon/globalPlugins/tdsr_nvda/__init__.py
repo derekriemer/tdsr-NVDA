@@ -123,16 +123,19 @@ class TDSRConsoleNuker(NVDAObject):
 		super(TDSRConsoleNuker, self).event_loseFocus()
 
 	def script_caret_on(self, gesture):
-		pass
+		gesture.send()
 
 	def getScript(self, gesture):
 		identifyer = ""
+		print list(gesture.normalizedIdentifiers)
 		for i in list(gesture.normalizedIdentifiers):
+			print i
 			if i in self._gestureMap:
 				identifyer = i
-				print i
+				print "Identifyer %s found match for" % i
 				break
-		if self.TDSROn and "script_caret_" in identifyer:
+		#If someone doesn't kill me after this hack ...
+		if self.TDSROn and "script_caret_" in self._gestureMap.get(identifyer,lambda:1).__name__:
 			return self.script_caret_on.__get__(self, self.__class__)
 		return super(TDSRConsoleNuker, self).getScript(gesture)
 
